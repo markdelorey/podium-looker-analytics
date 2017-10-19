@@ -18,4 +18,9 @@ explore: top_navigation_reports {
 }
 
 explore: organizations {}
-explore: users {}
+explore: users {
+  join: organizations {
+    sql_on:  ${users.organization_id} = ${organizations.id} ;;
+    relationship:  many_to_one
+  }
+}
