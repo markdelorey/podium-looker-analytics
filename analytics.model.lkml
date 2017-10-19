@@ -16,3 +16,6 @@ explore: top_navigation_reports {
     relationship:  many_to_one
   }
 }
+
+explore: organizations {}
+explore: users {}

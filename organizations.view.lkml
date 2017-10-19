@@ -277,6 +277,11 @@ view: organizations {
     drill_fields: [detail*]
   }
 
+  measure: total_organizations {
+    type:  count_distinct
+    sql: ${id} ;;
+  }
+
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
