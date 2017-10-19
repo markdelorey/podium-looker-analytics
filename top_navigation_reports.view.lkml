@@ -177,4 +177,12 @@ view: top_navigation_reports {
     type: count
     drill_fields: [id, context_campaign_name, page_name, context_library_name, app_name]
   }
+  measure: Total_count_1 {
+    type: count
+    drill_fields: [id, context_campaign_name, page_name, context_library_name, app_name]
+    filters: {
+      field: organizations.locations_count
+      value: "59"
+    }
+  }
 }
